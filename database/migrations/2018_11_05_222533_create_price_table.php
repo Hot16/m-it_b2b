@@ -20,8 +20,7 @@ class CreatePriceTable extends Migration
                 $table->integer('price_'.$item)->nullable();
             }
             $table->integer('qty')->nullable();
-            $table->json('data')->nullable();
-            $table->timestamps();
+            $table->text('data')->nullable();
         });
     }
 
